@@ -1,3 +1,4 @@
+//Ews request to get item info
 function getItemDataRequest(itemId) {
     var soapToGetItemData = '<?xml version="1.0" encoding="utf-8"?>' +
                     '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +
@@ -28,6 +29,7 @@ function getItemDataRequest(itemId) {
     return soapToGetItemData;
 }
 
+//Ews request to send the modified item
 function getSendItemRequest(itemId, changeKey) {
     var soapSendItemRequest = '<?xml version="1.0" encoding="utf-8"?>' +
                             '<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"' +

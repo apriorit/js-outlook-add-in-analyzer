@@ -26,6 +26,7 @@ function buildAttachmentsInfo(xmlDoc) {
 }
 
 function updateAndComplete(text) {
+	//Notify in UI about status
     Office.context.mailbox.item.notificationMessages.replaceAsync("status", {
         type: "informationalMessage",
         message: text,
